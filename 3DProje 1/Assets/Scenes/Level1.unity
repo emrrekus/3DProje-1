@@ -379,7 +379,7 @@ Light:
   m_BounceIntensity: 13.2
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 5.23e-43, y: 1.1578e-41, z: 1.02e-43, w: -0.00000015857643}
+  m_BoundingSphereOverride: {x: 0, y: 3.4e-44, z: 0, w: -0.000000005644552}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -965,14 +965,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 250265180245043226, guid: e0af97225d3fb1f4bac5848a3e1b5251, type: 3}
-      propertyPath: m_Drag
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 250265180245043226, guid: e0af97225d3fb1f4bac5848a3e1b5251, type: 3}
-      propertyPath: m_Mass
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4984210761228761028, guid: e0af97225d3fb1f4bac5848a3e1b5251, type: 3}
       propertyPath: m_Name
       value: Player
