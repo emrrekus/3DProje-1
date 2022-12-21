@@ -10,7 +10,7 @@ namespace Proje1.Controllers
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] float _turnSpeed = 10f;
-        [SerializeField] float _force = 650f;
+        [SerializeField] float _force = 500f;
         Mover _mover;
         DInput _input;
         Rototar _rototar;
