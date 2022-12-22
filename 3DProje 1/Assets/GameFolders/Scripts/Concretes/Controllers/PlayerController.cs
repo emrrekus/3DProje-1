@@ -1,4 +1,5 @@
 using Proje1.Inputs;
+using Proje1.Managers;
 using Proje1.Movements;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace Proje1.Controllers
         Rototar _rototar;
         Fuel _fuel;
 
+        bool _canMove;
         bool _canForceUp;
         float _leftRight;
 
@@ -28,6 +30,21 @@ namespace Proje1.Controllers
             _input = new DInput();
             _rototar = new Rototar(this);
             _fuel= GetComponent<Fuel>();
+        }
+        private void Start()
+        {
+            _canMove = true;
+        }
+        private void OnEnable()
+        {
+            GameManager.Instance.OnGameOver += HandleOnEventTriggered;
+        }
+
+      
+
+        private void OnDisable()
+        {
+            GameManager.Instance.OnGameOver -= HandleOnEventTriggered;
         }
 
         private void FixedUpdate()
@@ -43,6 +60,7 @@ namespace Proje1.Controllers
         }
         private void Update()
         {
+            if (!_canMove) return;
             if (_input.IsForceUp &&!_fuel.IsEmpty)
             {
                 _canForceUp = true;
@@ -54,6 +72,13 @@ namespace Proje1.Controllers
                 
             }
             _leftRight = _input.LeftRight;
+        }
+        private void HandleOnEventTriggered()
+        {
+           _canMove= false;
+            _canForceUp= false;
+            _leftRight = 0f;
+            _fuel.FuelIncrease(0f);
         }
     }
 }
