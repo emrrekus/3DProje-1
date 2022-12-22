@@ -38,6 +38,7 @@ namespace Proje1.Controllers
         private void OnEnable()
         {
             GameManager.Instance.OnGameOver += HandleOnEventTriggered;
+            GameManager.Instance.OnMissionSucced += HandleOnEventTriggered;
         }
 
       
@@ -45,6 +46,7 @@ namespace Proje1.Controllers
         private void OnDisable()
         {
             GameManager.Instance.OnGameOver -= HandleOnEventTriggered;
+            GameManager.Instance.OnMissionSucced -= HandleOnEventTriggered;
         }
 
         private void FixedUpdate()
