@@ -48,6 +48,15 @@ namespace Proje1.Managers
             yield return SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex+levelIndex);
 
         }
+        public void LoadMenuScene()
+        {
+            StartCoroutine(LoadMenuSceneAsync());
+        }
+        public IEnumerator LoadMenuSceneAsync()
+        {
+            yield return SceneManager.LoadSceneAsync("Menu");
+
+        }
         public void Exit()
         {
             Debug.Log("Exit Button");
