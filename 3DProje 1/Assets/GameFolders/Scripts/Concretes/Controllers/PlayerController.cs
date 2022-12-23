@@ -21,6 +21,7 @@ namespace Proje1.Controllers
         bool _canForceUp;
         float _leftRight;
 
+        public bool CanMove => _canMove;
         public float TurnSpeed => _turnSpeed;
         public float Force => _force;
 
