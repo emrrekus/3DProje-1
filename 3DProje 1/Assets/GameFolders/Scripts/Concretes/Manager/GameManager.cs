@@ -54,7 +54,7 @@ namespace Proje1.Managers
         }
         public IEnumerator LoadMenuSceneAsync()
         {
-            yield return SceneManager.LoadSceneAsync("Menu");
+            yield return SceneManager.LoadSceneAsync("SceneMenu");
 
         }
         public void Exit()
