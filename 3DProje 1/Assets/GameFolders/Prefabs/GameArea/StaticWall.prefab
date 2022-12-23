@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StaticWall
       objectReference: {fileID: 0}
+    - target: {fileID: 4028756334742639249, guid: b71ade33dc81f9d408177b6134191bd4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6949126710018339181, guid: b71ade33dc81f9d408177b6134191bd4, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -57,20 +61,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b71ade33dc81f9d408177b6134191bd4, type: 3}
---- !u!1 &8477315549715299772 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4028756334742639249, guid: b71ade33dc81f9d408177b6134191bd4, type: 3}
-  m_PrefabInstance: {fileID: 4777330852929236781}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &-6874885910488746041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8477315549715299772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342a83f230f26d3419c3ced3a3dec546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
