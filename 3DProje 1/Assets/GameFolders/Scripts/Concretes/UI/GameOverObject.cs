@@ -34,6 +34,7 @@ namespace Proje1.UI
             if (!_gameOverPanel.activeSelf)
             {
                 _gameOverPanel.SetActive(true);
+
             }
         }
     }
